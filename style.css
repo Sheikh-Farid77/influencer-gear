@@ -12,6 +12,9 @@
 
 :root{
     --font-color: #3A3A3A;
+    --btn-bg-color: #E02C6D;
+    --white: #fff;
+    --camera-bg: #F1E4FF;
 }
 /* header section start */
 /* nav bar */
@@ -26,6 +29,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 3rem;
 }
 .nav-bar h1{
     font-size: 1.5rem;
@@ -50,6 +54,66 @@ header{
     font-weight: 600;
     color: var(--font-color);
 }
+/* nav-bar end */
+/* banner section start */
+.banner-section{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.banner-left-content h1{
+    font-size: 3.3rem;
+    font-weight: 700;
+    color: var(--font-color);
+    margin-bottom: 1rem;
+}
+.banner-left-content p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--font-color);
+    margin-bottom: 1.5rem;
+}
+button{
+    border: none;
+    background-color: var(--btn-bg-color);
+    border-radius: 2.5rem;
+    font-size: 1rem;
+    color: var(--white);
+    padding: 1rem 2rem;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+.banner-right-content{
+    border: 3px solid var(--camera-bg);
+    width: 475px;
+    height: 475px;
+    border-radius: 500%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-item{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: var(--camera-bg);
+    position: relative;
+
+    
+}
+.image-content{
+    position: absolute;
+}
+.image-content img{
+    width: 100%;
+}
+
 
 /* header section end */
 
@@ -60,10 +124,29 @@ header{
     .nav-bar{
         flex-direction: column;
         gap: 1rem;
-    }
+}
     .nav-bar ul{
         flex-direction: column;
         gap: 1.5rem;
-    }
+}
+    .banner-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+}
+    .banner-left-content{
+        order: 1;
+}
+    .banner-right-content{
+    height: 400px;
+    width: 400px;
+}
+    .right-item{
+    height: 325px;
+    width: 325px;
+}
+
     
 }
